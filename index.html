@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arjun Virk</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-left">
-      <a href="#home"><b>Home</b></a>
+      <a href="#home">Home</a>
       <a href="#portfolio"><b>Portfolio</b></a>
       <a href="#writing"><b>Writing</b></a>
       <a href="#photo"><b>Photo Dump</b></a>
@@ -21,13 +22,23 @@
       <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <button id="toggle-dark" class="dark-toggle">🌓</button>
     </div>
   </nav>
 
-  <section id="home" class="content">
-    <h1>Hello, I'm Arjun 👋</h1>
-    <p>Welcome to my world of building, writing, and creating.</p>
+  <!-- Title Section -->
+  <section id="title" class="content fade-in">
+    <div class="title-block">
+      <h1>hey i'm arjun</h1>
+      <hr />
+    </div>
+    <p>i'm a 17 y/o currently working at the intersection of ml x oncology + sidequesting to become a pro tennis player</p>
   </section>
 
+  <section class="about fade-in">
+    <!-- Add more content here -->
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
