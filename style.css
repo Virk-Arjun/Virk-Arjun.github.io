@@ -50,6 +50,10 @@ body {
   margin-left: 15px;
 }
 
+.dark-toggle i {
+  font-size: 1.2rem;
+}
+
 /* Content */
 .content {
   padding-top: 120px;
@@ -64,7 +68,7 @@ body {
 }
 
 #title h1 {
-  font-size: 48px;
+  font-size: 36px; /* smaller */
   font-weight: 700;
   margin-bottom: 5px;
   width: max-content;
@@ -79,7 +83,7 @@ body {
 }
 
 #title p {
-  font-size: 18px;
+  font-size: 16px; /* smaller */
   margin-top: 20px;
   max-width: 600px;
   line-height: 1.5;
@@ -138,14 +142,14 @@ body.dark-mode #title hr {
   }
 
   .content {
-    padding: 100px 20px 40px 20px;
+    padding: 100px 20px 40px 10px;
   }
 
   #title h1 {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   #title p {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
