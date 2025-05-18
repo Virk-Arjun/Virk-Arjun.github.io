@@ -78,24 +78,32 @@ body {
   line-height: 1.6;
 }
 
-/* About Section */
-.about {
+/* About & Additional Sections */
+.about,
+.my.interests,
+.whats.next {
   max-width: 700px;
-  margin: 80px auto 40px auto;
+  margin: 80px auto;
   padding: 0 20px;
 }
 
-.about h2 {
+.about h2,
+.my.interests h2,
+.whats.next h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.about ul {
+.about ul,
+.my.interests ul,
+.whats.next ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-.about li {
+.about li,
+.my.interests li,
+.whats.next li {
   font-size: 16px;
   margin-bottom: 10px;
   line-height: 1.5;
@@ -146,6 +154,18 @@ body.dark-mode .nav-right a {
   }
 
   #title p {
+    font-size: 14px;
+  }
+
+  .about h2,
+  .my.interests h2,
+  .whats.next h2 {
+    font-size: 18px;
+  }
+
+  .about li,
+  .my.interests li,
+  .whats.next li {
     font-size: 14px;
   }
 }
