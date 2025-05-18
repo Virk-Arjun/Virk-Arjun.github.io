@@ -42,16 +42,13 @@ body {
   font-size: 1.2rem;
 }
 
+/* Toggle */
 .dark-toggle {
   background: none;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   margin-left: 15px;
-}
-
-.dark-toggle i {
-  font-size: 1.2rem;
 }
 
 /* Content */
@@ -68,37 +65,59 @@ body {
 }
 
 #title h1 {
-  font-size: 36px; /* smaller */
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 5px;
   width: max-content;
 }
 
-#title hr {
-  border: none;
-  border-top: 3px solid black;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 0 20px 0;
-}
-
 #title p {
-  font-size: 16px; /* smaller */
+  font-size: 16px;
   margin-top: 20px;
   max-width: 600px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Scroll Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+/* About Section */
+.about-compact {
+  max-width: 700px;
+  margin: 120px auto 60px auto;
+  padding: 0 20px;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+.about-compact h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-compact h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.about-compact p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.list-block p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Dark Mode */
@@ -115,10 +134,6 @@ body.dark-mode .navbar {
 body.dark-mode .nav-left a,
 body.dark-mode .nav-right a {
   color: white;
-}
-
-body.dark-mode #title hr {
-  border-top: 3px solid white;
 }
 
 /* Responsive */
@@ -150,6 +165,19 @@ body.dark-mode #title hr {
   }
 
   #title p {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .about-compact h1 {
+    font-size: 24px;
+  }
+
+  .about-compact h2 {
+    font-size: 18px;
+  }
+
+  .about-compact p,
+  .list-block p {
+    font-size: 14px;
   }
 }
