@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arjun Virk</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-left">
       <a href="#home">Home</a>
@@ -17,36 +18,54 @@
       <a href="#photo"><b>Photo Dump</b></a>
     </div>
     <div class="nav-right">
-      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/Virk-Arjun" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/virkvarjun" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/arju_codes/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/virkvarjun/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <button id="toggle-dark" class="dark-toggle">🌓</button> 
     </div>
   </nav>
 
-  <main class="about-compact">
-    <h1>Arjun Virk</h1>
-
-    <h2>Some things about me:</h2>
-    <div class="list-block">
-      <p><b>•</b> I'm a high school founder, AI researcher, and builder currently working at the intersection of AI and cancer diagnostics.</p>
-      <p><b>•</b> I co-founded <strong>Hack49</strong>, a global hackathon that reached nearly 1 million students and gave away $13K+ in prizes.</p>
-      <p><b>•</b> I lead <strong>Everyone STEM</strong>, a nonprofit helping students explore emerging tech through free education and mentorship.</p>
-      <p><b>•</b> I run <strong>Altivox Strategies</strong>, a consulting agency building AI tools for law and real estate firms.</p>
-      <p><b>•</b> I like turning technical curiosity into real-world impact — across research, products, and education.</p>
+  <!-- Title Section -->
+  <section id="title" class="content fade-in">
+    <div class="title-block">
+      <h1>hey i'm arjun</h1>
     </div>
+    <p>i'm a 17 y/o currently working at the intersection of ml x oncology + sidequesting to become a pro tennis player. based in toronto canada 🇨🇦</p>
+    <br>
+    <p>i'm also an incoming software engineering student @ university of waterloo 🪿</p>
+    <br>
+    <p>this is my repository of my work, thoughts, and life updates :)</p>
+  </section>
 
-    <h2>Some things I'm interested in:</h2>
-    <div class="list-block">
-      <p><b>•</b> AI and oncology — how machine learning can push the boundaries of early diagnosis and treatment personalization.</p>
-      <p><b>•</b> Startups and product thinking — the art of building something people want, fast and lean.</p>
-      <p><b>•</b> Design, writing, and storytelling — whether through code, content, or curriculum.</p>
-      <p><b>•</b> Education, especially for underserved or underrepresented students in tech.</p>
-      <p><b>•</b> Basketball, F1, and any opportunity to learn from competition and creative process.</p>
-    </div>
+  <!-- What I'm Scheming Section -->
+  <section class="about fade-in">
+    <h2>what i'm scheming</h2>
+    <ul>
+      <li><b>Research @ UCLA</b> — i'm currently working under dr. william speier on improving a stanford paper for thryoid nodule risk-straitifcation systems to 94%+ accuracy</li>
+      <li><b>ML Eng. @ Triage Technologies</b> — built out ml infrastrucutre last summer. worked under mat kallada to create datalakehouses with 10 000 entries for company medical llm</li>
+      <li><b>Scaling @ Altivox Strategies</b> — building an ai consulting agency for real-estate firms that builds out ai agents and websites. scaling to reach $10 000 mrr by september</li>
+      <li><b>Building @ Hack49</b> — co-founded one of canada's largest hackathons with 1 000 participants, reaching 1 000 000 students globally</li>
+    </ul>
+  </section>
+  <section class = "my interests"> 
+    <h2>what i'm interested in</h2>
+    <ul>
+      <li><b>startups</b> - i'm currently shifting my focus away from academia to entrepenuership. i'm working on building a stealth startup that will change the way we learn with ai</li>
+      <li><b>learning</b> - i'm trying to become more technical in math, physics, and programming. this will position me as a technical founder for my next venture. right now, i'm at calc 2</li>
+      <li><b>racket sports</b> - i'm an avid tennis, badminton, and table tennis player. i'm working to become a semi-pro in either by 2030.</li>
+      <li><b>reading</b> - i no longer read fiction. i only read non-fiction and self-help books so i can learn from the best minds in the world. currently reading 48 laws of power and principles</li>
+    </ul>
+  </section>
+  <section class = "what's next"> 
+    <h2>what's next from me?</h2> 
+    <ul> 
+      <li><b>startup funding</b> - once out of stealth, i'll be working on raising a series a. stay tuned on x for its launch!</li> 
+      <li><b>new research</b> - i'm shifting my work at ucla to use ml to solve problems in cancer treatments, not so much diagnostics anymore. aiming to have a paper published by december</li> 
+      <li><b>startup funding</b> - once out of stealth, i'll be working on raising a series a. stay tuned on x for its launch!</li> 
+    </ul>
+  </section>
 
-    <p style="margin-top: 30px;">Checkout my <a href="#writing">writing</a>, <a href="#portfolio">projects</a>, and <a href="https://x.com/">socials</a>.</p>
-  </main>
-
+  <script src="script.js"></script>
 </body>
 </html>
