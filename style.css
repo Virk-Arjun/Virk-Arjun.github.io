@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
   color: black;
+  line-height: 1.6;
 }
 
 /* Navbar */
@@ -22,7 +23,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-left a,
@@ -51,62 +52,53 @@ body {
   margin-left: 15px;
 }
 
-/* Content */
-.content {
-  padding-top: 120px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-
 /* Title Section */
-.title-block {
-  display: inline-block;
+#title.content {
+  padding: 140px 40px 20px 40px;  /* Reduced bottom padding */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-#title h1 {
-  font-size: 36px;
+.title-block h1 {
+  font-size: 42px;
   font-weight: 700;
-  margin-bottom: 5px;
-  width: max-content;
+  margin-bottom: 10px;
 }
 
 #title p {
-  font-size: 16px;
-  margin-top: 20px;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-/* About & Additional Sections */
-.about,
-.my.interests,
-.whats.next {
+  font-size: 18px;
+  margin-top: 16px;
   max-width: 700px;
-  margin: 80px auto;
-  padding: 0 20px;
 }
 
-.about h2,
-.my.interests h2,
-.whats.next h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
+/* General Section Styling */
+.section {
+  max-width: 800px;
+  margin: 48px auto 32px auto;  /* Tighter section spacing */
+  padding: 0 40px;
 }
 
-.about ul,
-.my.interests ul,
-.whats.next ul {
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.section ul {
   list-style-type: disc;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
-.about li,
-.my.interests li,
-.whats.next li {
+.section li {
   font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  font-size: 14px;
 }
 
 /* Dark Mode */
@@ -125,7 +117,7 @@ body.dark-mode .nav-right a {
   color: white;
 }
 
-/* Responsive */
+/* Responsive Layout */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -133,7 +125,8 @@ body.dark-mode .nav-right a {
     padding: 10px 20px;
   }
 
-  .nav-left, .nav-right {
+  .nav-left,
+  .nav-right {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -145,27 +138,30 @@ body.dark-mode .nav-right a {
     margin: 10px 0;
   }
 
-  .content {
-    padding: 100px 20px 40px 10px;
+  #title.content {
+    padding: 120px 20px 20px 20px;  /* Compact on mobile */
   }
 
-  #title h1 {
-    font-size: 24px;
+  .title-block h1 {
+    font-size: 28px;
   }
 
   #title p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  .about h2,
-  .my.interests h2,
-  .whats.next h2 {
-    font-size: 18px;
+  .section {
+    margin: 32px auto 24px auto;
+    padding: 0 20px;
   }
 
-  .about li,
-  .my.interests li,
-  .whats.next li {
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .section li {
     font-size: 14px;
+    margin-bottom: 6px;
   }
 }

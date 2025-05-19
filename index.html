@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-left">
       <a href="#home">Home</a>
@@ -25,18 +26,18 @@
     </div>
   </nav>
 
+  <!-- Title Section -->
   <section id="title" class="content fade-in">
     <div class="title-block">
       <h1>hey i'm arjun</h1>
     </div>
     <p>i'm a 17 y/o currently working at the intersection of ml x oncology + sidequesting to become a pro tennis player. based in toronto canada 🇨🇦</p>
-    <br>
     <p>i'm also an incoming software engineering student @ university of waterloo 🪿</p>
-    <br>
     <p>this is my repository of my work, thoughts, and life updates :)</p>
   </section>
 
-  <section class="about fade-in">
+  <!-- About -->
+  <section class="section about fade-in">
     <h2>what i'm scheming</h2>
     <ul>
       <li><b><a href="https://bair.seas.ucla.edu/" target="_blank">Comp. Bio Research @ UCLA</a></b> — i'm currently working under <a href="https://scholar.google.com/citations?user=t_SI2oIAAAAJ&hl=en">Dr. William Speier</a> on improving a Stanford paper for thyroid nodule risk-stratification systems to 94%+ accuracy</li>
@@ -46,35 +47,42 @@
     </ul>
   </section>
 
-  <section class="my interests"> 
+  <!-- Interests -->
+  <section class="section interests fade-in">
     <h2>what i'm interested in</h2>
     <ul>
       <li><b>startups</b> — i'm currently shifting my focus away from academia to entrepreneurship. i'm working on building a stealth startup that will change the way we learn with AI</li>
       <li><b>learning</b> — i'm trying to become more technical in math, physics, and programming. this will position me as a technical founder for my next venture. right now, i'm at calc 2</li>
       <li><b>racket sports</b> — i'm an avid tennis, badminton, and table tennis player. i'm working to become a semi-pro in either by 2030</li>
-      <li><b>reading</b> — i no longer read fiction. i only read non-fiction and self-help books so i can learn from the best minds in the world. currently reading *48 Laws of Power* and *Principles*</li>
+      <li><b>reading</b> — i no longer read fiction. i only read non-fiction and self-help books so i can learn from the best minds in the world. currently reading 48 Laws of Power and Principles</li>
     </ul>
   </section>
 
-  <section class="what's next"> 
-    <h2>what's next from me?</h2> 
-    <ul> 
-      <li><b>startup funding</b> — once out of stealth, i'll be working on raising a Series A. stay tuned on <a href="https://x.com/virkvarjun" target="_blank">X</a> for its launch!</li> 
-      <li><b>new research</b> — i'm shifting my work at <a href="https://www.ucla.edu/" target="_blank">UCLA</a> to use ML to solve problems in cancer treatments, not so much diagnostics anymore. aiming to have a paper published by December</li> 
+  <!-- What's Next -->
+  <section class="section whats-next fade-in">
+    <h2>what's next from me?</h2>
+    <ul>
+      <li><b>Startup funding</b> — launching publicly soon. Follow along on <a href="https://x.com/virkvarjun" target="_blank">X</a></li>
+      <li><b>New research</b> — publishing paper on ML for cancer treatment at UCLA</li>
     </ul>
   </section>
 
-  <section class="learn more"> 
-    <p>check out my work on <a href = "https://github.com/Virk-Arjun?tab=overview&from=2025-05-01&to=2025-05-18">gtihub</a></p>
+  <!-- Links -->
+  <section class="section fade-in">
+    <p>Check out my work on <a href="https://github.com/Virk-Arjun">GitHub</a></p>
+    <p>Want to connect? <a href="https://cal.com/arjun-virk/30min">Book a 1:1</a></p>
   </section>
 
-  <section>
-    <p>interested in my work or just want to chat? book a meeting on my <a href = "https://cal.com/arjun-virk/30min">calendar</a></p>
-  </section>
-  <section class="copyright"> 
+  <!-- Footer -->
+  <footer class="section copyright">
     <p>© 2025 MIT Licensed</p>
-  </section>
+  </footer>
 
-  <script src="script.js"></script>
+  <!-- Dark Mode Script -->
+  <script>
+    document.getElementById("toggle-dark").addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
