@@ -1,4 +1,3 @@
-/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,7 +51,6 @@ body {
   margin-left: 15px;
 }
 
-/* Title Section */
 #title.content {
   padding: 140px 40px 20px 40px;
   max-width: 800px;
@@ -73,7 +70,6 @@ body {
   max-width: 700px;
 }
 
-/* General Section Styling */
 .section {
   max-width: 800px;
   margin: 48px auto 32px auto;
@@ -95,14 +91,12 @@ body {
   margin-bottom: 8px;
 }
 
-/* Footer */
 footer {
   text-align: center;
   margin: 40px auto 20px auto;
   font-size: 14px;
 }
 
-/* Dark Mode */
 body.dark-mode {
   background-color: #121212;
   color: white;
@@ -118,25 +112,31 @@ body.dark-mode .nav-right a {
   color: white;
 }
 
-/* Responsive Layout */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px 20px;
   }
 
   .nav-left,
   .nav-right {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
   }
 
   .nav-left a,
   .nav-right a,
   .dark-toggle {
-    margin: 10px 0;
+    margin: 6px 10px;
+    font-size: 16px;
+  }
+
+  .nav-right i {
+    font-size: 1.2rem;
   }
 
   #title.content {
@@ -145,10 +145,12 @@ body.dark-mode .nav-right a {
 
   .title-block h1 {
     font-size: 28px;
+    text-align: center;
   }
 
   #title p {
     font-size: 15px;
+    text-align: center;
   }
 
   .section {
@@ -159,36 +161,39 @@ body.dark-mode .nav-right a {
   .section h2 {
     font-size: 20px;
     margin-bottom: 12px;
+    text-align: center;
   }
 
   .section li {
     font-size: 14px;
     margin-bottom: 6px;
   }
+
+  footer {
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: center;
+  }
 }
 
-/* Link Styling */
 a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-/* Body links get underline + turquoise */
 .section a:hover,
 #title a:hover {
   color: #00adb5;
   text-decoration: underline;
 }
 
-/* Navbar hover remains turquoise, no underline */
 .nav-left a:hover,
 .nav-right a:hover {
   color: #00adb5;
   text-decoration: none;
 }
 
-/* DARK MODE LINK FIX */
 body.dark-mode a {
   color: white;
   text-decoration: none;
