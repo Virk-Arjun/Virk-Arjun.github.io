@@ -38,6 +38,7 @@ body {
 .nav-left a:hover,
 .nav-right a:hover {
   color: #00adb5;
+  text-decoration: none;
 }
 
 .nav-right i {
@@ -54,7 +55,7 @@ body {
 
 /* Title Section */
 #title.content {
-  padding: 140px 40px 20px 40px;  /* Reduced bottom padding */
+  padding: 140px 40px 20px 40px;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -75,7 +76,7 @@ body {
 /* General Section Styling */
 .section {
   max-width: 800px;
-  margin: 48px auto 32px auto;  /* Tighter section spacing */
+  margin: 48px auto 32px auto;
   padding: 0 40px;
 }
 
@@ -139,7 +140,7 @@ body.dark-mode .nav-right a {
   }
 
   #title.content {
-    padding: 120px 20px 20px 20px;  /* Compact on mobile */
+    padding: 120px 20px 20px 20px;
   }
 
   .title-block h1 {
@@ -166,14 +167,42 @@ body.dark-mode .nav-right a {
   }
 }
 
-/* Global Link Styling */
+/* Link Styling */
 a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-a:hover {
+/* Body links get underline + turquoise */
+.section a:hover,
+#title a:hover {
   color: #00adb5;
   text-decoration: underline;
+}
+
+/* Navbar hover remains turquoise, no underline */
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+/* DARK MODE LINK FIX */
+body.dark-mode a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+body.dark-mode .section a:hover,
+body.dark-mode #title a:hover {
+  color: #00adb5;
+  text-decoration: underline;
+}
+
+body.dark-mode .nav-left a:hover,
+body.dark-mode .nav-right a:hover {
+  color: #00adb5;
+  text-decoration: none;
 }
